@@ -114,6 +114,3 @@ graph TD
 - **Low Confidence Scores**: Ensure the document is well-lit and the image quality is high for better detection.
 
 ---
-
-
-<p align="center">Made with ❤️ for Academic Excellence</p>
