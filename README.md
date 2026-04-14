@@ -1,6 +1,5 @@
 # 🛡️ DocVerify - Advanced Document Verification System
 
-![DocVerify Hero](hero.png)
 
 ## 📋 Table of Contents
 - [Overview](#-overview)
