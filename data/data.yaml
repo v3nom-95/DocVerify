@@ -1,0 +1,26 @@
+path: C:/Users/dhanu/OneDrive/Desktop/New folder/train-yolov8-custom-dataset-step-by-step-guide/data
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 3
+names: ['aadhar_card', 'pancard', 'voterid']
+
+roboflow:
+  workspace: sahil-jadhav-ovrbg
+  project: docs-2
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/sahil-jadhav-ovrbg/docs-2/dataset/1
+
+#path: /home/phillip/Desktop/todays_tutorial/38_yolov8_train_custom_model/code/data  # dataset root dir
+#train: images/train  # train images (relative to 'path')
+#val: images/train  # val images (relative to 'path')
+# path:C: /Users/dhanu/OneDrive/Desktop/New folder/train-yolov8-custom-dataset-step-by-step-guide/data
+# train: data\train
+# val: data\valid
+# test: data\test
+
+# nc: 3
+# names: ['aadhar_card', 'pancard', 'voterid']
+
