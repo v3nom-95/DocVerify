@@ -1,21 +1,33 @@
-# 🛡️ DocVerify - Advanced Document Verification System
+<div align="center">
 
+# 🛡️ DocVerify
+**Advanced Document Verification System**
 
-## 📋 Table of Contents
-- [Overview](#-overview)
-- [Tech Stack](#-tech-stack)
-- [Key Features](#-key-features)
-- [System Architecture](#-system-architecture)
-- [Getting Started](#-getting-started)
-- [Usage](#-usage)
-- [Troubleshooting](#-troubleshooting)
-- [Contributors](#-contributors)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+</div>
 
----
+<br />
+
+<details open>
+  <summary><b>📋 Table of Contents</b></summary>
+  <ol>
+    <li><a href="#-overview">Overview</a></li>
+    <li><a href="#-tech-stack">Tech Stack</a></li>
+    <li><a href="#-key-features">Key Features</a></li>
+    <li><a href="#-system-architecture">System Architecture</a></li>
+    <li><a href="#-getting-started">Getting Started</a></li>
+    <li><a href="#-usage">Usage</a></li>
+    <li><a href="#-troubleshooting">Troubleshooting</a></li>
+    <li><a href="#-license">License</a></li>
+    <li><a href="#-contributors">Contributors</a></li>
+  </ol>
+</details>
+
+<br />
 
 ## 🌟 Overview
 
-**DocVerify** is a high-performance, AI-driven document verification system specifically designed for validating identity documents like Aadhar cards. Leveraging the power of **YOLOv8** (You Only Look Once), the system performs real-time object detection to identify and verify critical security features, ensuring document authenticity and completeness.
+> **DocVerify** is a high-performance, AI-driven document verification system specifically designed for validating identity documents like Aadhar cards. Leveraging the power of **YOLOv8** (You Only Look Once), the system performs real-time object detection to identify and verify critical security features, ensuring document authenticity and completeness.
 
 Developed as a modern web application, DocVerify provides an intuitive interface for users to upload documents and receive detailed verification reports within seconds.
 
@@ -23,23 +35,27 @@ Developed as a modern web application, DocVerify provides an intuitive interface
 
 ## 💻 Tech Stack
 
+<div align="center">
+
 | Category | Technologies |
 | :--- | :--- |
 | **Backend** | ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
-| **AI / Machine Learning** | ![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=for-the-badge&logo=ultralytics&logoColor=black) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white) |
+| **AI / ML** | ![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=for-the-badge&logo=ultralytics&logoColor=black) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white) |
 | **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
 | **Visualization** | ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white) ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge) |
+
+</div>
 
 ---
 
 ## 🚀 Key Features
 
-- 🤖 **AI-Powered Detection**: Deep learning models trained on thousands of document samples.
-- ⚡ **Real-Time Verification**: Instant analysis of document elements.
-- 🔍 **Granular Validation**: Checks for 8+ specific elements (QR Code, Name, Photo, etc.).
-- 📊 **Detailed Reporting**: Visual feedback on detected and missing elements.
-- 🎨 **Modern UI**: Sleek, responsive interface with drag-and-drop support.
-- 📈 **Performance Metrics**: Included scripts for training and validation analysis.
+* **🤖 AI-Powered Detection**: Deep learning models trained on thousands of document samples.
+* **⚡ Real-Time Verification**: Instant analysis of document elements.
+* **🔍 Granular Validation**: Checks for 8+ specific elements (QR Code, Name, Photo, etc.).
+* **📊 Detailed Reporting**: Visual feedback on detected and missing elements.
+* **🎨 Modern UI**: Sleek, responsive interface with drag-and-drop support.
+* **📈 Performance Metrics**: Included scripts for training and validation analysis.
 
 ---
 
@@ -63,10 +79,13 @@ graph TD
 ## 🛠️ Getting Started
 
 ### Prerequisites
-- Python 3.8 or higher
-- Pip (Python package manager)
+* Python `3.8` or higher
+* `pip` (Python package manager)
 
 ### Installation
+
+<details>
+<summary><b>Click to view installation steps</b></summary>
 
 1. **Clone the repository**
    ```bash
@@ -84,6 +103,7 @@ graph TD
    ```bash
    pip install flask opencv-python ultralytics torch matplotlib seaborn pandas
    ```
+</details>
 
 ---
 
@@ -93,13 +113,11 @@ graph TD
    ```bash
    python app.py
    ```
-
 2. **Access the Portal**
    Open your browser and navigate to `http://127.0.0.1:5000`
-
 3. **Verify Document**
-   - Click "Choose File" or Drag & Drop an image.
-   - Wait for the AI to process and display the results.
+   * Click "Choose File" or Drag & Drop an image.
+   * Wait for the AI to process and display the results.
 
 ---
 
@@ -107,9 +125,19 @@ graph TD
 
 ### ⚠️ Common Issues
 
-- **500 Internal Server Error**: This usually occurs if the AI model file is missing. Ensure the model exists at:
+* **`500 Internal Server Error`**: This usually occurs if the AI model file is missing. Ensure the model exists at:
   `New folder/ps/adharmodel/best2.pt`
-- **Invalid File Type**: Ensure you are uploading only `.jpg`, `.jpeg`, or `.png` files.
-- **Low Confidence Scores**: Ensure the document is well-lit and the image quality is high for better detection.
+* **Invalid File Type**: Ensure you are uploading only `.jpg`, `.jpeg`, or `.png` files.
+* **Low Confidence Scores**: Ensure the document is well-lit and the image quality is high for better detection.
 
 ---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## 👥 Contributors
+
+* **v3nom-95**
